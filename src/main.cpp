@@ -1,0 +1,16 @@
+#include <iostream>
+#include "../include/Book.h"
+
+using namespace std;
+
+int main()
+{
+    Book b1(101, "Harry Potter", "J.K. Rowling");
+
+    cout << "ID: " << b1.getId() << endl;
+    cout << "Title: " << b1.getTitle() << endl;
+    cout << "Author: " << b1.getAuthor() << endl;
+    cout << "Issued: " << b1.isIssued() << endl;
+
+    return 0;
+}
