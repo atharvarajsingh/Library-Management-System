@@ -18,10 +18,10 @@ public:
          string title,
          string author);
 
-    int getId();
-    string getTitle();
-    string getAuthor();
-    bool isIssued();
+    int getId() const;
+    string getTitle() const;
+    string getAuthor() const;
+    bool isIssued() const;
 
     void issueBook();
     void returnBook();

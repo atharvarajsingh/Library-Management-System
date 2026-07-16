@@ -1,16 +1,22 @@
 #include <iostream>
 #include "../include/Book.h"
+#include "../include/Library.h"
 
 using namespace std;
 
 int main()
 {
-    Book b1(101, "Harry Potter", "J.K. Rowling");
+    Library library;
 
-    cout << "ID: " << b1.getId() << endl;
-    cout << "Title: " << b1.getTitle() << endl;
-    cout << "Author: " << b1.getAuthor() << endl;
-    cout << "Issued: " << b1.isIssued() << endl;
+    Book b1(101, "Harry Potter", "J.K. Rowling");
+    Book b2(102, "The Alchemist", "Paulo Coelho");
+    Book b3(103, "Atomic Habits", "James Clear");
+
+    library.addBook(b1);
+    library.addBook(b2);
+    library.addBook(b3);
+
+    library.displayBooks();
 
     return 0;
 }

@@ -8,22 +8,22 @@ Book::Book(int id, string title, string author)
     this->issued = false;
 }
 
-int Book::getId()
+int Book::getId() const
 {
     return id;
 }
 
-string Book::getTitle()
+string Book::getTitle() const
 {
     return title;
 }
 
-string Book::getAuthor()
+string Book::getAuthor() const
 {
     return author;
 }
 
-bool Book::isIssued()
+bool Book::isIssued() const
 {
     return issued;
 }
